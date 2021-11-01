@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Querying Albums</title>
+
+   
+
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <!-- MY CODE STARTS HERE!!! -->
+    <div class="album-head-wrapper">
+        <div class="album-header">
+          Kourtneys Album Library!
+        </div>
+    </div>
+
+    <!-- I'm linking the data to a button like we did in class! -->
+    <!-- Needs to be a login now -->
+    <div class="getData">Get Albums!</div>
+
+   
+
+  <!-- This is album data -->
+   <div id="data"></div>
+
+   <!-- User Login -->
+   <h4>Login Please!</h4>
+   <div class="login">
+    <label for="email">Email Address:</label>
+    <input id="email" type="email">
+    <label for="pw">Password:</label>
+    <input id="pw" type="password" minlength="8">
+    <input onclick="login()" id="login" type="submit" value="Login">
+   </div>
+
+   <h4>Logout.</h4>
+   <div class="logout">
+    <button onclick="signOut()">Sign Out</button>
+   </div>
+   
+
+   
+
+     <!-- update the version number as needed -->
+     <script defer src="/__/firebase/9.1.2/firebase-app-compat.js"></script>
+     <!-- include only the Firebase features as you need -->
+     <script defer src="/__/firebase/9.1.2/firebase-auth-compat.js"></script>
+     <script defer src="/__/firebase/9.1.2/firebase-database-compat.js"></script>
+     <script defer src="/__/firebase/9.1.2/firebase-firestore-compat.js"></script>
+     <script defer src="/__/firebase/9.1.2/firebase-functions-compat.js"></script>
+     <script defer src="/__/firebase/9.1.2/firebase-messaging-compat.js"></script>
+     <script defer src="/__/firebase/9.1.2/firebase-storage-compat.js"></script>
+     <script defer src="/__/firebase/9.1.2/firebase-analytics-compat.js"></script>
+     <script defer src="/__/firebase/9.1.2/firebase-remote-config-compat.js"></script>
+     <script defer src="/__/firebase/9.1.2/firebase-performance-compat.js"></script>
+     <!-- 
+       initialize the SDK after all desired features are loaded, set useEmulator to false
+       to avoid connecting the SDK to running emulators.
+     -->
+     <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+     <script src="lib/jquery-3.6.0.min.js"></script>
+     <script src="app/app.js"></script>
+  </body>
+</html>
